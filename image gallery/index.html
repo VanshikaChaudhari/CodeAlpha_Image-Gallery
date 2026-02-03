@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>My Portfolio Gallery</h2>
+    
+    <div class="filter-controls">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="arch">Architecture</button>
+    <button class="filter-btn" data-filter="animals">Animals</button>
+</div>
+
+<div class="gallery-grid" id="gallery">
+    <div class="gallery-item" data-category="nature"><img src="https://picsum.photos/id/10/600/400" alt="Forest"></div>
+    <div class="gallery-item" data-category="nature"><img src="https://picsum.photos/id/28/600/400" alt="Forest Stream"></div>
+    <div class="gallery-item" data-category="nature"><img src="https://picsum.photos/id/15/600/400" alt="Waterfall"></div>
+    
+    <div class="gallery-item" data-category="city"><img src="https://picsum.photos/id/43/600/400" alt="City Street"></div>
+    <div class="gallery-item" data-category="city"><img src="https://picsum.photos/id/48/600/400" alt="Bridge"></div>
+    <div class="gallery-item" data-category="city"><img src="https://picsum.photos/id/93/600/400" alt="City Skyline"></div>
+    
+    <div class="gallery-item" data-category="arch"><img src="https://picsum.photos/id/122/600/400" alt="Glass Building"></div>
+    <div class="gallery-item" data-category="arch"><img src="https://picsum.photos/id/164/600/400" alt="Historic Arch"></div>
+    <div class="gallery-item" data-category="arch"><img src="https://picsum.photos/id/191/600/400" alt="Concrete Stairs"></div>
+    
+    <div class="gallery-item" data-category="animals"><img src="https://picsum.photos/id/237/600/400" alt="Black Puppy"></div>
+    <div class="gallery-item" data-category="animals"><img src="https://picsum.photos/id/219/600/400" alt="Tiger"></div>
+    <div class="gallery-item" data-category="animals"><img src="https://picsum.photos/id/169/600/400" alt="Hanging Fox"></div>
+</div>
+
+<div class="lightbox" id="lightbox">
+    <span class="close-btn">&times;</span>
+    <button class="prev-btn">&#10094;</button>
+    <img class="lightbox-content" id="lightbox-img">
+    <button class="next-btn">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
